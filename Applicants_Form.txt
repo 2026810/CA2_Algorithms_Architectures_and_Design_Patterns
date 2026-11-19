@@ -1,0 +1,47 @@
+First name,Last name,Gender,Email,Salary,Department,Position,Job title,Company
+Kate,Summer,Female,ksummer@OakridgeSchool.edu,45000.00,Science,senior,Senior Teacher,Oakridge School
+Ken,Winter,Male,kwinter@OakridgeSchool.edu,38000.00,Mathematics,middle,Teacher,Oakridge School
+James,Anderson,Male,janderson@OakridgeSchool.edu,85000.00,Administration,,Principal,Oakridge School
+Sarah,Johnson,Female,sjohnson@OakridgeSchool.edu,72000.00,Administration,,Vice Principal,Oakridge School
+John,Smith,Male,jsmith@OakridgeSchool.edu,62000.00,Finance,,Head of Department,Oakridge School
+Emily,Brown,Female,ebrown@OakridgeSchool.edu,41000.00,Humanities,middle,Teacher,Oakridge School
+Michael,Williams,Male,mwilliams@OakridgeSchool.edu,28000.00,IT Support,intern,Teaching Assistant,Oakridge School
+Sophia,Taylor,Female,staylor@OakridgeSchool.edu,34000.00,Science,junior,Junior Teacher,Oakridge School
+David,Wilson,Male,dwilson@OakridgeSchool.edu,51000.00,IT Support,senior,Senior Teacher,Oakridge School
+Olivia,Martinez,Female,omartinez@OakridgeSchool.edu,32000.00,Finance,contract,Administrative Staff,Oakridge School
+Ethan,Anderson,Male,eanderson@OakridgeSchool.edu,48000.00,Mathematics,senior,Senior Teacher,Oakridge School
+Mia,Clark,Female,mclark@OakridgeSchool.edu,39000.00,Humanities,middle,Teacher,Oakridge School
+John,Anderson,Male,janderson2@OakridgeSchool.edu,61000.00,Mathematics,,Head of Department,Oakridge School
+Sam,Johnson,Female,sjohnson2@OakridgeSchool.edu,60000.00,Humanities,,Head of Department,Oakridge School
+John,Brown,Male,jbrown@OakridgeSchool.edu,63000.00,Science,,Head of Department,Oakridge School
+Emma,Brown,Female,ebrown2@OakridgeSchool.edu,33000.00,Arts & Sports,junior,Junior Teacher,Oakridge School
+Max,Williams,Male,mwilliams2@OakridgeSchool.edu,27000.00,IT Support,intern,Teaching Assistant,Oakridge School
+Sonya,Taylor,Female,staylor2@OakridgeSchool.edu,35000.00,Administration,junior,Student Counselor,Oakridge School
+Denis,Wilson,Male,dwilson2@OakridgeSchool.edu,64000.00,IT Support,,Head of Department,Oakridge School
+Olga,Martinez,Female,omartinez2@OakridgeSchool.edu,33000.00,Finance,contract,Administrative Staff,Oakridge School
+Ed,Anderson,Male,eanderson2@OakridgeSchool.edu,47000.00,Finance,senior,Senior Administrator,Oakridge School
+Milla,Clark,Female,mclark2@OakridgeSchool.edu,40000.00,Arts & Sports,middle,Teacher,Oakridge School
+Sophia,Lopez,Female,slopez@OakridgeSchool.edu,31000.00,Library,junior,Librarian,Oakridge School
+Benjamin,Hill,Male,bhill@OakridgeSchool.edu,68000.00,Administration,,Dean of Students,Oakridge School
+Jessica,Lee,Female,jlee@OakridgeSchool.edu,55000.00,Science,,Department Coordinator,Oakridge School
+Daniel,Walker,Male,dwalker@OakridgeSchool.edu,29000.00,Arts & Sports,intern,Teaching Assistant,Oakridge School
+Eleanor,Harris,Female,eharris@OakridgeSchool.edu,36000.00,Humanities,contract,Substitute Teacher,Oakridge School
+Chris,Evans,Male,cevans@OakridgeSchool.edu,28500.00,Library,intern,Library Assistant,Oakridge School
+Alex,Turner,Male,aturner@OakridgeSchool.edu,42000.00,IT Support,middle,IT Technician,Oakridge School
+Nina,Holmes,Female,nholmes@OakridgeSchool.edu,37000.00,Finance,contract,Accountant,Oakridge School
+Victor,Stewart,Male,vstewart@OakridgeSchool.edu,49000.00,Mathematics,senior,Senior Teacher,Oakridge School
+Lucy,Bennett,Female,lbennett@OakridgeSchool.edu,35500.00,Administration,junior,HR Coordinator,Oakridge School
+Oscar,Reed,Male,oreed@OakridgeSchool.edu,36500.00,Finance,contract,Bursar Assistant,Oakridge School
+Lana,Parker,Female,lparker@OakridgeSchool.edu,50000.00,Science,senior,Lab Supervisor,Oakridge School
+Harry,Cooper,Male,hcooper@OakridgeSchool.edu,34500.00,Arts & Sports,junior,PE Coach,Oakridge School
+Isla,Fisher,Female,ifisher@OakridgeSchool.edu,41500.00,Humanities,middle,Teacher,Oakridge School
+Leo,Wright,Male,lwright@OakridgeSchool.edu,52000.00,IT Support,senior,Systems Administrator,Oakridge School
+Eva,Mitchell,Female,emitchell@OakridgeSchool.edu,34000.00,Administration,junior,Admissions Officer,Oakridge School
+Ryan,Carter,Male,rcarter@OakridgeSchool.edu,40500.00,Mathematics,middle,Teacher,Oakridge School
+Holly,Brooks,Female,hbrooks@OakridgeSchool.edu,33500.00,Science,junior,Junior Teacher,Oakridge School
+Daniel,Gray,Male,dgray@OakridgeSchool.edu,56000.00,Arts & Sports,,Department Coordinator,Oakridge School
+Layla,Jones,Female,ljones@OakridgeSchool.edu,32500.00,Finance,junior,Finance Clerk,Oakridge School
+Sebastian,Morgan,Male,smorgan@OakridgeSchool.edu,36000.00,Administration,contract,HR Officer,Oakridge School
+Elena,Scott,Female,escott@OakridgeSchool.edu,48500.00,Humanities,senior,Senior Teacher,Oakridge School
+Finn,Walker,Male,fwalker@OakridgeSchool.edu,27500.00,IT Support,intern,Support Technician,Oakridge School
+Amelia,King,Female,aking@OakridgeSchool.edu,42500.00,Library,middle,Senior Librarian,Oakridge School
