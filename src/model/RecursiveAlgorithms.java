@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RecursiveAlgorithms {
 
-    // RECURSIVE MERGE SORT 
+    // 1. RECURSIVE MERGE SORT 
     public static List<StaffMember> mergeSort(List<StaffMember> list) {
         if (list == null || list.size() <= 1) {
             return list;
@@ -46,5 +46,24 @@ public class RecursiveAlgorithms {
         }
 
         return merged;
+    }
+
+    // 2. RECURSIVE BINARY SEARCH 
+    public static StaffMember recursiveBinarySearch(List<StaffMember> sortedList, String targetName, int low, int high) {
+        if (sortedList == null || low > high) {
+            return null; // Caso base: não encontrado
+        }
+
+        int mid = low + (high - low) / 2;
+        String midName = sortedList.get(mid).getName();
+        int comparison = midName.compareToIgnoreCase(targetName.trim());
+
+        if (comparison == 0) {
+            return sortedList.get(mid); // Caso base: encontrado
+        } else if (comparison > 0) {
+            return recursiveBinarySearch(sortedList, targetName, low, mid - 1);
+        } else {
+            return recursiveBinarySearch(sortedList, targetName, mid + 1, high);
+        }
     }
 }
