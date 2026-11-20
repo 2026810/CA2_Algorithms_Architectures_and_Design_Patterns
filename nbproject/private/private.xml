@@ -4,6 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/gabri/OneDrive/Documents/NetBeansProjects/SchoolManagement/src/schoolmanagement/SchoolManagement.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documents/NetBeansProjects/SchoolManagement/src/model/MenuOption.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documents/NetBeansProjects/SchoolManagement/src/model/ManagerType.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documents/NetBeansProjects/SchoolManagement/src/model/Department.java</file>
+            <file>file:/C:/Users/gabri/OneDrive/Documents/NetBeansProjects/SchoolManagement/src/model/StaffMember.java</file>
         </group>
     </open-files>
 </project-private>
