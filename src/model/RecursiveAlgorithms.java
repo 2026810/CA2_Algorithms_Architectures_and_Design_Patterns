@@ -51,7 +51,7 @@ public class RecursiveAlgorithms {
     // 2. RECURSIVE BINARY SEARCH 
     public static StaffMember recursiveBinarySearch(List<StaffMember> sortedList, String targetName, int low, int high) {
         if (sortedList == null || low > high) {
-            return null; // Caso base: não encontrado
+            return null; 
         }
 
         int mid = low + (high - low) / 2;
@@ -59,7 +59,7 @@ public class RecursiveAlgorithms {
         int comparison = midName.compareToIgnoreCase(targetName.trim());
 
         if (comparison == 0) {
-            return sortedList.get(mid); // Caso base: encontrado
+            return sortedList.get(mid); 
         } else if (comparison > 0) {
             return recursiveBinarySearch(sortedList, targetName, low, mid - 1);
         } else {
