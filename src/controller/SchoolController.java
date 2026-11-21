@@ -71,7 +71,7 @@ public class SchoolController {
                 while ((line = br.readLine()) != null) {
                     if (isHeader) {
                         isHeader = false;
-                        continue; // Pula o cabeçalho do ficheiro
+                        continue; 
                     }
                     if (line.trim().isEmpty()) {
                         continue;
