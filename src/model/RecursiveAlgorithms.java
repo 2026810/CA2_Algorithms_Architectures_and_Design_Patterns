@@ -5,18 +5,15 @@ import java.util.List;
 
 public class RecursiveAlgorithms {
 
-    // 1. RECURSIVE MERGE SORT 
+    // Recursive Merge Sort
     public static List<StaffMember> mergeSort(List<StaffMember> list) {
-        if (list == null || list.size() <= 1) {
+        if (list.size() <= 1) {
             return list;
         }
 
         int mid = list.size() / 2;
-        List<StaffMember> left = new ArrayList<>(list.subList(0, mid));
-        List<StaffMember> right = new ArrayList<>(list.subList(mid, list.size()));
-
-        left = mergeSort(left);
-        right = mergeSort(right);
+        List<StaffMember> left = mergeSort(new ArrayList<>(list.subList(0, mid)));
+        List<StaffMember> right = mergeSort(new ArrayList<>(list.subList(mid, list.size())));
 
         return merge(left, right);
     }
@@ -48,18 +45,18 @@ public class RecursiveAlgorithms {
         return merged;
     }
 
-    // 2. RECURSIVE BINARY SEARCH 
+    // Recursive Binary Search
     public static StaffMember recursiveBinarySearch(List<StaffMember> sortedList, String targetName, int low, int high) {
-        if (sortedList == null || low > high) {
-            return null; 
+        if (low > high) {
+            return null;
         }
 
         int mid = low + (high - low) / 2;
-        String midName = sortedList.get(mid).getName();
-        int comparison = midName.compareToIgnoreCase(targetName.trim());
+        StaffMember midMember = sortedList.get(mid);
+        int comparison = midMember.getName().compareToIgnoreCase(targetName.trim());
 
         if (comparison == 0) {
-            return sortedList.get(mid); 
+            return midMember;
         } else if (comparison > 0) {
             return recursiveBinarySearch(sortedList, targetName, low, mid - 1);
         } else {
@@ -67,3 +64,4 @@ public class RecursiveAlgorithms {
         }
     }
 }
+    
