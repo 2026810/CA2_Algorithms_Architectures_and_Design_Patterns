@@ -13,17 +13,32 @@ import model.SchoolBinaryTree;
 import model.StaffMember;
 import view.ConsoleView;
 
+/**
+ * Controller class in the MVC architecture that coordinates user interactions,
+ * file ingestion, algorithm execution, input validation, and binary tree construction.
+ *
+ * @author Gabriel Cinzas Longo (2026810)
+ */
 public class SchoolController {
     private final ConsoleView view;
     private List<StaffMember> staffList;
     private final List<StaffMember> newlyAddedRecords;
 
+    /**
+     * Constructs the SchoolController with the specified ConsoleView.
+     *
+     * @param view the console view responsible for user I/O
+     */
     public SchoolController(ConsoleView view) {
         this.view = view;
         this.staffList = new ArrayList<>();
         this.newlyAddedRecords = new ArrayList<>();
     }
 
+    /**
+     * Starts the application lifecycle: loads initial staff data from file
+     * and runs the main menu loop until the user selects EXIT.
+     */
     public void start() {
         loadFile();
         boolean running = true;
@@ -61,6 +76,10 @@ public class SchoolController {
         }
     }
 
+    /**
+     * Prompts for a CSV/TXT filename and loads valid StaffMember records into memory.
+     * Handles missing or unreadable files gracefully via IOException recovery.
+     */
     private void loadFile() {
         boolean loaded = false;
         while (!loaded) {
@@ -95,6 +114,13 @@ public class SchoolController {
         }
     }
 
+    /**
+     * Parses raw user menu input into a type-safe MenuOption enum constant,
+     * supporting both numeric choices (1-5) and text labels.
+     *
+     * @param input raw string entered by the user
+     * @return matching MenuOption, or null if invalid
+     */
     private MenuOption parseMenuOption(String input) {
         try {
             int num = Integer.parseInt(input);
@@ -109,11 +135,19 @@ public class SchoolController {
         }
     }
 
+    /**
+     * Sorts the staff list alphabetically using recursive Merge Sort (O(n log n))
+     * and instructs the view to display the top 20 records.
+     */
     private void handleSort() {
         staffList = RecursiveAlgorithms.mergeSort(staffList);
         view.displaySortedTop20(staffList);
     }
 
+    /**
+     * Ensures the staff list is sorted before executing a recursive Binary Search (O(log n))
+     * for a target employee name entered by the user.
+     */
     private void handleSearch() {
         staffList = RecursiveAlgorithms.mergeSort(staffList);
         String targetName = view.promptSearchName();
@@ -121,6 +155,10 @@ public class SchoolController {
         view.displaySearchResult(found);
     }
 
+    /**
+     * Prompts for and validates new staff member details against ManagerType and
+     * Department enums before appending the record to memory.
+     */
     private void handleAddRecord() {
         String name = "";
         while (name.isEmpty()) {
@@ -161,6 +199,10 @@ public class SchoolController {
         view.displayNewlyAddedRecords(newlyAddedRecords);
     }
 
+    /**
+     * Builds a complete, level-order Binary Tree from the staff list (minimum 20 records)
+     * and displays the level-by-level organizational hierarchy, height, and node count.
+     */
     private void handleCreateBinaryTree() {
         if (staffList.size() < 20) {
             view.displayError("Minimum 20 records required to build the binary tree.");
